@@ -199,6 +199,7 @@ nav{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    transition: 1s;
 }
 
 .visual_img{
@@ -224,15 +225,9 @@ nav{
     cursor: pointer;
     opacity: 0.2;
     transition: 0.3s;
+    outline: none;
 }
 
 #slide_btn > button:hover{opacity: 1;}
-#slider-left{
-    left: -50px;
-    background-image: url("../image/left_icon.svg");
-}
-
-#slider-right{
-    right: -50px;
-    background-image: url("../image/right_icon.svg");
-}
+#slider-left{left: -50px;background-image: url("../image/left_icon.svg");pointer-events: none;}
+#slider-right{right: -50px;background-image: url("../image/right_icon.svg");}
