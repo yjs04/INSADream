@@ -6,8 +6,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    color: #000;
-    font-family: 'Do Hyeon', sans-serif;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #wrap{position: relative;}
@@ -73,7 +73,8 @@ nav{
 }
 
 .one_dep > a{
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
     transition: 0.3s;
 }
 
@@ -88,6 +89,7 @@ nav{
 
 .two_dep > a{
     display: block;
+    font-size: 0.9em;
     margin: 0.5em 0;
     color: #555;
     transition: 0.3s;
@@ -137,7 +139,7 @@ nav{
 
 .all_dep{
     width: 300px;
-    height: 300px;
+    height: 350px;
     display: inline-block;
     margin: 1em;
 }
@@ -231,3 +233,20 @@ nav{
 #slide_btn > button:hover{opacity: 1;}
 #slider-left{left: -50px;background-image: url("../image/left_icon.svg");pointer-events: none;}
 #slider-right{right: -50px;background-image: url("../image/right_icon.svg");}
+
+/* content */
+#content > section{
+    width: 100%;
+    padding: 5em;
+}
+
+.content_header{margin-bottom: 1em;}
+.content_header > *{text-align: center;}
+.content_title{font-size: 3em; font-weight: lighter;}
+
+
+/* footer */
+footer{padding: 2em 5em; background-color: #f7f7f7;}
+.footer_link{margin-bottom: 2em;}
+.footer_link > a{margin: 0 3em; font-weight: bold; color: #555;}
+footer > p{color: #aaa;}
