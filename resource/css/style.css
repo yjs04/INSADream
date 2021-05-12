@@ -240,6 +240,7 @@ nav{
     padding: 5em;
 }
 
+#content > section:nth-child(2){background-color: #EFFAFE;}
 .content_header{margin-bottom: 1em;}
 .content_header > *{text-align: center;}
 .content_title{font-size: 3em; font-weight: lighter;}
@@ -251,7 +252,7 @@ nav{
 .main_education:hover{transform: translateY(-5%);}
 
 /* footer */
-footer{padding: 2em 5em; background-color: #f7f7f7;}
+footer{padding: 2em 5em;}
 .footer_link{margin-bottom: 2em;}
 .footer_link > a{margin: 0 3em; font-weight: bold; color: #555;}
 footer > p{color: #aaa;}
