@@ -1,5 +1,12 @@
 class App{
     constructor(){
+        $("#content > section").each(function(i){
+            let bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            let bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object - 50){
+                $(this).animate({'opacity':'1'},500);
+            }
+        });
         this.setEvent();
     }
 
@@ -47,6 +54,16 @@ class App{
             else $("header").css({"top":"0px","box-shadow":"0 10px 20px rgba(0,0,0,0.1)"});
 
             lastScrollTop = st;
+
+            $("#content > section").each(function(i){
+                let bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                let bottom_of_window = $(window).scrollTop() + $(window).height();
+                if( bottom_of_window > bottom_of_object - 200){
+                    $(this).children(".content_header").animate({'opacity':'1'},500,function(){
+                        $(this).parent("section").children(".content_body").animate({'opacity':'1'},700);
+                    });
+                }
+            });
         });
         
     }

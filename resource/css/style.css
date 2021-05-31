@@ -23,6 +23,7 @@ header{
     padding-top: 1.5em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     z-index: 10;
     transition: 0.2s ease-in-out;
@@ -102,9 +103,6 @@ nav{
 /* all menu area */
 #all_menu_open{
     display: none;
-    position: absolute;
-    top: 5.3em;
-    right: 6em;
     width: 30px;
     height: 30px;
     border: none;
@@ -181,6 +179,8 @@ nav{
     #all_menu_open{display: block;}
 }
 
+@media screen and (max-width:1000px){header > .util_div{display: none;}}
+
 /* visual */
 #visual{
     position: relative;
@@ -242,10 +242,10 @@ nav{
 }
 
 #content > section:nth-child(2){background-color: #EFFAFE;}
-.content_header{margin-bottom: 1em;}
+.content_header{margin-bottom: 1em;opacity: 0;}
 .content_header > *{text-align: center;}
 .content_title{font-size: 3em; font-weight: lighter;}
-.content_body{padding: 1em;margin-top: 2em;}
+.content_body{padding: 1em;margin-top: 2em;opacity: 0;}
 #education{display: flex;justify-content: space-around;flex-wrap: wrap;}
 .main_education{width: 370px;display: flex;flex-direction: column;margin: 1em;cursor: pointer;transition: 0.3s all;border-radius: 20px;overflow: hidden;box-shadow: 0 0 20px #ddd;}
 .main_education_img{width: 100%; height: 250px;background-color: #555;}
@@ -262,7 +262,7 @@ nav{
 .main_list > li > a{transition: 0.3s all;display: block;}
 .main_list > li:hover > a{opacity: 0.5;}
 #gallery{display: grid; grid-template-columns: repeat(3,1fr);}
-.gallery_box{width: 310px;height: 310px;background-color: #29415F;margin:2em auto;cursor: pointer;display: flex;justify-content: center;align-items: center;transition: 0.3s;position: relative;overflow: hidden;}
+.gallery_box{width: 310px;height: 310px;margin:2em auto;cursor: pointer;display: flex;justify-content: center;align-items: center;transition: 0.3s;position: relative;overflow: hidden;}
 .gallery_box > img{transition: 0.3s all;}
 .gallery_box:hover > img{transform: scale(1.1);}
 .gallery_content{position: absolute;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.4);display: flex;justify-content: center;align-items: center ;font-size: 5em;color: #fff;transform: translateY(100%);transition: 0.3s;}
