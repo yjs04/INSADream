@@ -60,7 +60,7 @@ class App{
                 let bottom_of_window = $(window).scrollTop() + $(window).height();
                 if( bottom_of_window > bottom_of_object - 200){
                     $(this).children(".content_header").animate({'opacity':'1'},500,function(){
-                        $(this).parent("section").children(".content_body").animate({'opacity':'1'},700);
+                        $(this).parent("section").children(".content_body").animate({'opacity':'1'},500);
                     });
                 }
             });
