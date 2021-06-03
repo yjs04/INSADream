@@ -59,7 +59,10 @@ header.hover::after{height: 200px;}
     display: inline-block;
     margin: 0 1em;
     color: #888;
+    transition: 0.3s all;
 }
+
+.util_div > a:hover{opacity: 0.5;}
 
 /* nav */
 nav{
@@ -95,10 +98,14 @@ nav{
     margin: 0.5em 0;
     color: #555;
     transition: 0.3s;
+    position: relative;
+    width: 0;
+    white-space: nowrap;
+    background-color: rgba(116, 214, 213,0.2);
 }
 
 .one_dep:hover > a{color: #108F8D;}
-.two_dep > a:hover{color: #2EA8A6;}
+.two_dep > a:hover{width: 95%;}
 
 /* all menu area */
 #all_menu_open{
@@ -255,7 +262,7 @@ nav{
 .main_list_wrap{min-width: 400px; width: 30%; margin: 1em;}
 .main_list_header{display: flex; justify-content: space-between; padding: 0.5em 0.2em; border-bottom: 3px solid #333;}
 .main_list_header > h5{font-size: 1.3em;}
-.more_btn{border: none;background-color: rgba(0, 0, 0, 0); font-weight: bold;transition: 0.3s;cursor: pointer;}
+.more_btn{border: none;background-color: rgba(0, 0, 0, 0); font-weight: bold;transition: 0.3s;cursor: pointer;outline: none;}
 .more_btn:hover{opacity: 0.5;}
 .main_list > li {padding: 0.7em 0; border-bottom: 1px solid #ddd;}
 .main_list > li:last-child{border: none;}
