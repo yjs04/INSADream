@@ -7,6 +7,7 @@ class App{
                 $(this).animate({'opacity':'1'},500);
             }
         });
+
         this.setEvent();
     }
 
@@ -65,7 +66,6 @@ class App{
                 }
             });
         });
-        
     }
 }
 

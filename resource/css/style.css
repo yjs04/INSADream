@@ -253,7 +253,8 @@ nav{
 .content_header > *{text-align: center;}
 .content_title{font-size: 3em; font-weight: lighter;}
 .content_body{padding: 1em;margin-top: 2em;opacity: 0;}
-#education{display: flex;justify-content: space-between;overflow: auto;box-shadow: inset 0 -5px 20px rgba(0, 0, 0, 0.2);border-radius: 20px;}
+.education{display: flex;justify-content: space-between;overflow: auto;box-shadow: inset 0 0px 20px rgba(100, 100, 100, 0.2);border-radius: 20px;position: relative;}
+.education::-webkit-scrollbar{display: none;}
 .main_education{width: 370px;display: flex;flex-direction: column;margin: 1em;cursor: pointer;transition: 0.3s all;box-shadow: 0 0 20px #ddd;border-radius: 20px;flex-shrink: 0;position: relative;}
 .main_education_img{width: 100%; height: 250px;background-color: #555;border-top-left-radius: 20px;border-top-right-radius: 20px;overflow: hidden;}
 .main_education > h5{text-align: center;font-size: 1.1em;padding: 1em 0; background-color: #fff;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;}
@@ -266,6 +267,7 @@ nav{
     width: 20px;
     height: 20px;
 }
+
 #comunity{display: flex;justify-content: space-between;flex-wrap: wrap;}
 .main_list_wrap{min-width: 400px; width: 30%; margin: 1em;}
 .main_list_header{display: flex; justify-content: space-between; padding: 0.5em 0.2em; border-bottom: 3px solid #333;}
@@ -276,8 +278,8 @@ nav{
 .main_list > li:last-child{border: none;}
 .main_list > li > a{transition: 0.3s all;display: block;}
 .main_list > li:hover > a{opacity: 0.5;}
-#gallery{display: grid; grid-template-columns: repeat(3,1fr);}
-.gallery_box{width: 310px;height: 310px;margin:2em auto;cursor: pointer;display: flex;justify-content: center;align-items: center;transition: 0.3s;position: relative;overflow: hidden;}
+#gallery{display: flex;justify-content: center;align-items: center;flex-wrap: wrap;}
+.gallery_box{width: 310px;height: 310px;margin:4em;cursor: pointer;display: flex;justify-content: center;align-items: center;transition: 0.3s;position: relative;overflow: hidden;}
 .gallery_box > img{transition: 0.3s all;}
 .gallery_box:hover > img{transform: scale(1.1);}
 .gallery_content{position: absolute;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.4);display: flex;justify-content: center;align-items: center ;font-size: 5em;color: #fff;transform: translateY(100%);transition: 0.3s;}
